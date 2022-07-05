@@ -117,6 +117,9 @@ while True:
    ![image](https://user-images.githubusercontent.com/108753610/177378837-b9d312a3-bb7b-4ea7-ad89-2f46912c36a8.png)
 
    5.黏贴以下代码
+   
+   ![image](https://user-images.githubusercontent.com/108753610/177380834-0639a70c-58b0-45cd-9c4e-f782e2b37a25.png)
+
    其中corn处可自行修改
 ```
 name: Auto Renew
