@@ -9,6 +9,7 @@
    2.新建文件
 ![image](https://user-images.githubusercontent.com/108753610/177378372-3ee71cba-1960-4a64-9be7-25a353c5047b.png)
    3.复制一下代码并命名为warp.py
+   其中referrer = str("[#] Enter the WARP+ ID:")改为自己的，如referrer = str("48118888-8888-8888-8888-917e888887b1")
    ![image](https://user-images.githubusercontent.com/108753610/177378740-99a5e1ee-c003-468c-9d7a-b00976594612.png)
 
 ```
@@ -38,7 +39,7 @@ print ("[+] THIS SCRIPT CODDED BY ALIILAPRO")
 print ("[-] SITE: aliilapro.github.io") 
 print ("[-] TELEGRAM: aliilapro")
 print ("--------")
-referrer = input("[#] Enter the WARP+ ID:")
+referrer = str("[#] Enter the WARP+ ID:")
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
@@ -108,10 +109,9 @@ while True:
 ```
    4.新建workflow
    ![image](https://user-images.githubusercontent.com/108753610/177378837-b9d312a3-bb7b-4ea7-ad89-2f46912c36a8.png)
+
    5.黏贴以下代码
-   ![Uploading image.png…]()
    其中corn处可自行修改
-   ![Uploading image.png…]()
 ```
 name: Auto Renew
 
@@ -135,5 +135,5 @@ jobs:
         run:
            python3 wpa.py
 ```
-
+   6.Enjoy
 
