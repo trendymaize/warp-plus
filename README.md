@@ -4,11 +4,13 @@
 脚本来自ALIILAPRO大佬
 
 ## 使用教程
-1.创建一个新库
+   1.创建一个新库
 ![image](https://user-images.githubusercontent.com/108753610/177378270-c762f78c-a0ea-4a62-9706-a8d4e9df6ae0.png)
-2.新建文件
+   2.新建文件
 ![image](https://user-images.githubusercontent.com/108753610/177378372-3ee71cba-1960-4a64-9be7-25a353c5047b.png)
-3.复制一下代码并命名为warp.py
+   3.复制一下代码并命名为warp.py
+   ![image](https://user-images.githubusercontent.com/108753610/177378740-99a5e1ee-c003-468c-9d7a-b00976594612.png)
+
 ```
 import urllib.request
 import json
@@ -104,3 +106,34 @@ while True:
 		print("[:(] Error when connecting to server.")
 		print(f"[#] Total: {g} Good {b} Bad")
 ```
+   4.新建workflow
+   ![image](https://user-images.githubusercontent.com/108753610/177378837-b9d312a3-bb7b-4ea7-ad89-2f46912c36a8.png)
+   5.黏贴以下代码
+   ![Uploading image.png…]()
+   其中corn处可自行修改
+   ![Uploading image.png…]()
+```
+name: Auto Renew
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 13 */4 * * *
+jobs:
+  run-it:
+    runs-on: ubuntu-latest
+    name: Run it on action
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v2
+      - name: setup-python ${{ matrix.pypy }}
+        id: setup-python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+      - name: Setting up
+        run:
+           python3 wpa.py
+```
+
+
