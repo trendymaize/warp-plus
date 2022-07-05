@@ -142,7 +142,7 @@ jobs:
           python-version: 3.x
       - name: Setting up
         run:
-           python3 wpa.py
+           python3 warp.py
 ```
    6.Enjoy
 
