@@ -118,7 +118,8 @@ while True:
 
    5.黏贴以下代码
    
-   ![image](https://user-images.githubusercontent.com/108753610/177380834-0639a70c-58b0-45cd-9c4e-f782e2b37a25.png)
+![image](https://user-images.githubusercontent.com/108753610/177382002-f9b1428f-f929-46b5-b567-18a804d7c9a0.png)
+
 
    其中corn处可自行修改
 ```
