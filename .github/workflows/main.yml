@@ -1,0 +1,21 @@
+name: Auto Renew
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 13 4 * * *
+jobs:
+  run-it:
+    runs-on: ubuntu-latest
+    name: Run it on action
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v2
+      - name: setup-python ${{ matrix.pypy }}
+        id: setup-python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+      - name: Setting up
+        run:
+           python3 warp.py
