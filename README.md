@@ -11,7 +11,8 @@
    3.复制一下代码并命名为warp.py
    
    其中referrer = str("[#] Enter the WARP+ ID:")改为自己的
-   
+   ![image](https://user-images.githubusercontent.com/108753610/177380393-b4980033-c1f8-4b01-94bb-ba45067bb70c.png)
+
    如referrer = str("48118888-8888-8888-8888-917e888887b1")
    ![image](https://user-images.githubusercontent.com/108753610/177378740-99a5e1ee-c003-468c-9d7a-b00976594612.png)
 
